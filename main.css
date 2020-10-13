@@ -1,0 +1,128 @@
+body {
+    background-color: #f3c0dd;
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    color: hsl(0, 0%, 0%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h2, h4 {
+    color: hsl(0, 0%, 0%);
+}
+
+h4, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    width: 700px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(94, 48, 48, 0.1) ;
+    margin-bottom: 40px;
+}
+
+img.powerpuff {
+    height: 100%;
+    width: 40%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.content {
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.description > h2 {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 20px;
+    color: #B70569;
+}
+
+.quote {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.by {
+    font-size: 12px;
+    margin-top: 3px;
+    color: #B70569;
+}
+
+img.avartar-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.attribution {
+    margin:0 auto;
+    display: table;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        display: grid;
+        width: 250px;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 5px;
+    }
+
+    img.drawer-image {
+        height: 13em;
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+
+    .content {
+        width: calc(100% - 30px);
+        font-size: 10px
+    }
+
+    .description > h2 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+
+    img.avartar-image{
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer {
+        padding: 0.5em;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 1.5vh;
+    }
+}
